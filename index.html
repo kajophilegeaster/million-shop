@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shoes shop</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  
+  <!-- Bootstrap local -->
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="shortcut icon" href="img/Logo1.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- 🩵 NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.png" alt="Logo" class="logo me-2">
+        <div>
+          <span class="fw-bold">shoes shop</span><br>
+          <small class="text-secondary">la qualité avant tout</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#Accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produits">Produits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-3">
+            <button class="btn btn-outline-light position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+              <i class="bi bi-cart3"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="cart-count">0</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🩷 CAROUSEL -->
+  <section id="Accueil" class="mt-5 pt-5 fade-section">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="img/room (1).jpg" class="d-block w-100" style="height:70vh;object-fit:cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="img/room (2).jpg" class="d-block w-100" style="height:70vh;object-fit:cover;">
+        </div>
+        <div class="carousel-item">
+          <img src="img/room (3).jpg" class="d-block w-100" style="height:70vh;object-fit:cover;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 🍬 PRODUITS -->
+  <section id="produits" class="py-5 bg-light fade-section">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">chapeaux</h2>
+      <div class="row g-4">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/hat (1).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>chapeau magique</h5>
+              <p>6 500 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="chapeau magique" data-price="6500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/hat (2).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>chapeau de sport</h5>
+              <p>2000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="chapeau de sport" data-price="2000">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/hat (3).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>chapeau gris</h5>
+              <p>3 500 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="chapeau gris" data-price="3500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/hat (4).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>chapeau blanc</h5>
+              <p>2000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="chapeau blanc" data-price="2000">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+       <h2 class="text-center mb-4 fw-bold">Nos chemises</h2>
+      <div class="row g-4">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shirt (1).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>chemise à rayures</h5>
+              <p>3000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Carmelo Cubico" data-price="1500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shirt (2).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>chemise en jean</h5>
+              <p>2500 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Sucette Magique" data-price="200">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shirt (3).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>chemise blanche</h5>
+              <p>5000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Carmelo Cubico" data-price="1500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shirt (4).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>chemise noir</h5>
+              <p>2000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Sucette Magique" data-price="200">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+       <h2 class="text-center mb-4 fw-bold">Nos chaussures</h2>
+      <div class="row g-4">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shoes (1).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>claquette</h5>
+              <p>4000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Carmelo Cubico" data-price="1500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shoes (2).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>Air force</h5>
+              <p>5500 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Sucette Magique" data-price="200">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shoes (3).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>tenis blanche</h5>
+              <p>7500 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Carmelo Cubico" data-price="1500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/shoes (4).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>basket de sport</h5>
+              <p>8000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Sucette Magique" data-price="200">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+       <h2 class="text-center mb-4 fw-bold">Nos jeans</h2>
+      <div class="row g-4">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/jean (1).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>jean percé</h5>
+              <p>11500 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Carmelo Cubico" data-price="1500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/jean (2).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>jean gris</h5>
+              <p>2000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Sucette Magique" data-price="200">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/jean (3).jpg" alt="Bonbon caramel" class="product-image">
+            <div class="product-info">
+              <h5>jean bleu foncé</h5>
+              <p>4000 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Carmelo Cubico" data-price="1500">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/jean (4).jpg" alt="Bonbon sucette" class="product-image">
+            <div class="product-info">
+              <h5>jean noir</h5>
+              <p>5500 FCFA</p>
+              <button class="btn btn-primary btn-sm add-to-cart" data-name="Sucette Magique" data-price="200">Ajouter au
+                panier</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 💖 SERVICES -->
+  <section id="services" class="py-5 fade-section">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Nos Services</h2>
+      <p class="lead mb-5">votre satisfaction est notre priorité</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="product-card p-3">
+            <img src="img/service (1).jpg" class="product-image mb-3">
+            <h5>promotion</h5>
+            <p>Profitez de nos offres spéciales tout au long de l'année.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-card p-3">
+            <img src="img/service (2).jpg" class="product-image mb-3">
+            <h5>commande en ligne</h5>
+            <p>Commandez en ligne et récupérez en boutique.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-card p-3">
+            <img src="img/service (3).jpg" class="product-image mb-3">
+            <h5>livraison à domicile</h5>
+            <p>Livraison rapide et soignée directement chez vous.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 💬 TÉMOIGNAGES -->
+<section id="testimonials" class="py-5 bg-white fade-section">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Ce que disent nos clients 💬</h2>
+    <p class="text-center text-muted mb-5">
+      Parce que vos sourires sont notre plus belle récompense 💖
+    </p>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Témoignage 1 -->
+        <div class="carousel-item active">
+          <div class="card mx-auto shadow-lg border-0" style="max-width: 700px;">
+            <div class="card-body text-center p-5">
+              <img src="img/client (1).jpg" alt="Client" class="rounded-circle mb-4 img-fluid" style="width:100px; height:100px; object-fit:cover;">
+              <blockquote class="blockquote mb-3">
+                <p class="mb-0 fst-italic">“Les bonbons sont tellement délicieux ! J’ai adoré le bouquet sucré pour l’anniversaire de ma sœur.”</p>
+              </blockquote>
+              <footer class="blockquote-footer mt-2">Nicole <cite title="Source Title">Cliente fidèle</cite></footer>
+              <div class="text-warning mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 2 -->
+        <div class="carousel-item">
+          <div class="card mx-auto shadow-lg border-0" style="max-width: 700px;">
+            <div class="card-body text-center p-5">
+              <img src="img/client (2).jpg" alt="Client" class="rounded-circle mb-4 img-fluid" style="width:100px; height:100px; object-fit:cover;">
+              <blockquote class="blockquote mb-3">
+                <p class="mb-0 fst-italic">“Service impeccable ! Commande rapide via WhatsApp et produits bien emballés.”</p>
+              </blockquote>
+              <footer class="blockquote-footer mt-2">Marion <cite title="Source Title">Client satisfait</cite></footer>
+              <div class="text-warning mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage 3 -->
+        <div class="carousel-item">
+          <div class="card mx-auto shadow-lg border-0" style="max-width: 700px;">
+            <div class="card-body text-center p-5">
+              <img src="img/client (3).jpg" alt="Client" class="rounded-circle mb-4 img-fluid" style="width:100px; height:100px; object-fit:cover;">
+              <blockquote class="blockquote mb-3">
+                <p class="mb-0 fst-italic">“shoes shop a rendu mon mariage encore plus magique ! Merci pour les douceurs !”</p>
+              </blockquote>
+              <footer class="blockquote-footer mt-2">yohan <cite title="Source Title">Mariée comblée</cite></footer>
+              <div class="text-warning mt-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contrôles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 📞 CONTACT -->
+  <section id="contact" class="py-5 bg-light fade-section text-center">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <p class="mb-4">Passez vos commandes facilement via WhatsApp ou téléphone.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://wa.me/+237671936697" target="_blank" class="contact-btn"><i class="bi bi-whatsapp"></i></a>
+        <a href="tel:+237671936697" class="contact-btn"><i class="bi bi-telephone"></i></a>
+        <a href="#" class="contact-btn"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-4 text-center">
+    <p class="mb-0">&copy; 2025 shoes shop — Tous droits réservés 💖</p>
+  </footer>
+
+  <!-- 🛒 MODAL PANIER -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Votre Panier</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="cart-items">
+          <p class="text-center text-muted">Votre panier est vide 🍬</p>
+        </div>
+        <div class="modal-footer">
+          <strong class="me-auto">Total: <span id="cart-total">0</span> FCFA</strong>
+          <button class="btn btn-success" id="whatsappOrderBtn">Commander via WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ TOAST AJOUT PANIER -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+    <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body" id="toast-message">Produit ajouté au panier 🎉</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const cart = [];
+    const cartCount = document.getElementById("cart-count");
+    const cartItems = document.getElementById("cart-items");
+    const cartTotal = document.getElementById("cart-total");
+    const toastEl = new bootstrap.Toast(document.getElementById("cartToast"));
+
+    document.querySelectorAll(".add-to-cart").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const name = btn.dataset.name;
+        const price = parseInt(btn.dataset.price);
+        const existing = cart.find(item => item.name === name);
+
+        if (existing) existing.qty++;
+        else cart.push({ name, price, qty: 1 });
+
+        updateCart();
+
+        document.getElementById("toast-message").textContent = `${name} ajouté au panier 🎉`;
+        toastEl.show();
+      });
+    });
+
+    function updateCart() {
+      cartItems.innerHTML = "";
+      let total = 0;
+
+      cart.forEach(item => {
+        total += item.price * item.qty;
+        const row = document.createElement("div");
+        row.className = "cart-item d-flex justify-content-between align-items-center";
+        row.innerHTML = `<span>${item.name} x${item.qty}</span><span>${item.price * item.qty} FCFA</span>`;
+        cartItems.appendChild(row);
+      });
+
+      if (cart.length === 0) {
+        cartItems.innerHTML = `<p class="text-center text-muted">Votre panier est vide 🍬</p>`;
+      }
+
+      cartCount.textContent = cart.reduce((sum, i) => sum + i.qty, 0);
+      cartTotal.textContent = total.toLocaleString();
+    }
+
+    // 💬 Commande via WhatsApp
+    document.getElementById("whatsappOrderBtn").addEventListener("click", () => {
+      if (cart.length === 0) return alert("Votre panier est vide !");
+      let message = "🛍️ *Nouvelle commande shoes shop*%0A%0A";
+      cart.forEach(item => {
+        message += `🍬 ${item.name} x${item.qty} = ${item.price * item.qty} FCFA%0A`;
+      });
+      message += `%0A💰 *Total:* ${cartTotal.textContent} FCFA%0A%0A📍Je souhaite finaliser ma commande.`;
+      window.open(`https://wa.me/+237671936697?text=${message}`, "_blank");
+    });
+
+    // ✨ FADE-IN ON SCROLL
+    const fadeEls = document.querySelectorAll(".fade-section");
+    function handleScroll() {
+      fadeEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) el.classList.add("visible");
+      });
+    }
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("load", handleScroll);
+  </script>
+</body>
+
+</html>
